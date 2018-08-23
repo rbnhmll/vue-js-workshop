@@ -20,10 +20,8 @@ export default {
 };
 </script>
 <style lang="stylus">
-.wrapper
-  max-width 1000px
-  width 100%
-  margin 0 auto
+@import './styles/_setup.styl'
+@import './styles/_global.styl'
 
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
