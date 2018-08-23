@@ -10,6 +10,7 @@
       novalidate
     >
       <div id="mc_embed_signup_scroll">
+        <h3>Sign up now to be the first to know when the workshop is announced!</h3>
         <div class="mc-field-group input-group">
           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
           <label for="mce-EMAIL">Email Address </label>
