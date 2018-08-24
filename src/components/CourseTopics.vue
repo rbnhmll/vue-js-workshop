@@ -1,34 +1,32 @@
 <template>
   <section>
-    <div class="wrapper--mini">
-      <h2>What will I learn?</h2>
+    <h2>What will I learn?</h2>
 
-      <ul>
-        <li>What is Vue, and why?</li>
-        <li>Vue CDN</li>
-        <li>Vue Devtools</li>
-        <li>The Vue Instance</li>
-        <li>Declarative Rendering</li>
-        <li>Directives</li>
-        <li>Methods</li>
-        <li>Event handing</li>
-        <li>Event modifiers</li>
-        <li>Component Registration</li>
-        <li>Props</li>
-        <li>Vue CLI 3</li>
-        <li>Single File Components</li>
-        <li>computed properties</li>
-        <li>Filters</li>
-      </ul>
+    <ul>
+      <li>What is Vue, and why?</li>
+      <li>Vue CDN</li>
+      <li>Vue Devtools</li>
+      <li>The Vue Instance</li>
+      <li>Declarative Rendering</li>
+      <li>Directives</li>
+      <li>Methods</li>
+      <li>Event handing</li>
+      <li>Event modifiers</li>
+      <li>Component Registration</li>
+      <li>Props</li>
+      <li>Vue CLI 3</li>
+      <li>Single File Components</li>
+      <li>computed properties</li>
+      <li>Filters</li>
+    </ul>
 
-      <h2>Plus</h2>
+    <h2>Plus</h2>
 
-      <ul>
-        <li>Gotchas</li>
-        <li>Tips</li>
-        <li>Tricks</li>
-      </ul>
-    </div>
+    <ul>
+      <li>Gotchas</li>
+      <li>Tips</li>
+      <li>Tricks</li>
+    </ul>
   </section>
 </template>
 

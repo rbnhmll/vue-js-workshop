@@ -1,11 +1,9 @@
 <template functional>
   <section>
-    <div class="wrapper--mini">
-      <div class="content">
-        <h2>Event Details</h2>
-        <h3>Toronto &bull; October 2018</h3>
-        <p>More info coming soon. Sign up to learn more.</p>
-      </div>
+    <div class="content">
+      <h2>Event Details</h2>
+      <h3>Toronto &bull; October 2018</h3>
+      <p>More info coming soon. Sign up to learn more.</p>
     </div>
   </section>
 </template>

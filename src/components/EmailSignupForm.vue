@@ -1,6 +1,5 @@
 <template>
-  <div class="wrapper--mini">
-
+  <div>
     <div id="mc_embed_signup" class="mc_embed_signup">
       <form
         action="https://robinhamill.us19.list-manage.com/subscribe/post?u=c39fa08c53c3453ac24ae8a66&amp;id=687f088c6f"
