@@ -27,7 +27,4 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-h2
-  // text-align center
-  font-size 2.5em
 </style>
