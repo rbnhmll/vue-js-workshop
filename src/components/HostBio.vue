@@ -11,37 +11,17 @@
       <h3>Robin Hamill is an independent developer that works with merchants to create
         unique buying experiencesby adding Vue.js (amongst other tools) to Shopify themes.</h3>
     </div>
-    <ul>
-      <li>
-        <a href="https://twitter.com/rbnhmll" aria-label="Twitter" title="Twitter" target="_blank">
-          <icon-twitter />
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/rbnhmll" aria-label="Github" title="Github" target="_blank">
-          <icon-github />
-        </a>
-      </li>
-      <li>
-        <a href="https://robinhamill.com" aria-label="Website" title="Website" target="_blank">
-          <icon-website />
-        </a>
-      </li>
-    </ul>
+    <social-icons />
   </section>
 </template>
 
 <script>
-import IconTwitter from './icons/IconTwitter.vue';
-import IconGithub from './icons/IconGithub.vue';
-import IconWebsite from './icons/IconWebsite.vue';
+import SocialIcons from './SocialIcons.vue';
 
 export default {
   name: 'HostBio',
   components: {
-    IconTwitter,
-    IconGithub,
-    IconWebsite,
+    SocialIcons,
   },
 };
 </script>
@@ -58,18 +38,6 @@ p, .headshot
 img
   width 200px
   border-radius 50%
-
-ul
-  margin 0
-  padding 0
-  list-style-type none
-  display flex
-  justify-content space-between
-  width 4em
-  margin 0 auto
-
-svg
-  height 1em
 
 .description
   margin-bottom 25px

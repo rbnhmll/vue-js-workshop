@@ -5,6 +5,7 @@
         <h1>Thanks for signing up!</h1>
         <p>I'll be in touch as soon as there is more info about this, and upcoming workshops!</p>
       </div>
+      <social-icons />
       <nav>
         <router-link to="/" class="btn">Back to home</router-link>
       </nav>
@@ -14,11 +15,13 @@
 
 <script>
 import Card from '../components/Card.vue';
+import SocialIcons from '../components/SocialIcons.vue';
 
 export default {
   name: 'Confirmation',
   components: {
     Card,
+    SocialIcons,
   },
 };
 </script>
