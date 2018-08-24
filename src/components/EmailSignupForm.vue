@@ -1,52 +1,50 @@
 <template>
-  <div>
-    <div id="mc_embed_signup" class="mc_embed_signup">
-      <form
-        action="https://robinhamill.us19.list-manage.com/subscribe/post?u=c39fa08c53c3453ac24ae8a66&amp;id=687f088c6f"
-        method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        class="validate"
-        target="_blank"
-        novalidate
-      >
-        <div id="mc_embed_signup_scroll">
-          <h2>Sign up to be the first to know when the workshop is announced!</h2>
-          <div class="grid">
-            <div class="mc-field-group input-group">
-              <input
-                type="email"
-                value=""
-                name="EMAIL"
-                class="required email"
-                id="mce-EMAIL"
-                required
-              >
-              <label for="mce-EMAIL">Email Address </label>
-            </div>
+  <div id="mc_embed_signup" class="mc_embed_signup">
+    <form
+      action="https://robinhamill.us19.list-manage.com/subscribe/post?u=c39fa08c53c3453ac24ae8a66&amp;id=687f088c6f"
+      method="post"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      class="validate"
+      target="_blank"
+      novalidate
+    >
+      <div id="mc_embed_signup_scroll">
+        <h2>Sign up to be the first to know when the workshop is announced!</h2>
+        <div class="grid">
+          <div class="mc-field-group input-group">
             <input
-              type="submit"
-              value="Notify me!"
-              name="subscribe"
-              id="mc-embedded-subscribe"
-              class="btn">
+              type="email"
+              value=""
+              name="EMAIL"
+              class="required email"
+              id="mce-EMAIL"
+              required
+            >
+            <label for="mce-EMAIL">Email Address </label>
           </div>
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>
-          <div
-            style="position: absolute; left: -5000px;"
-            aria-hidden="true">
-            <input
-            type="text"
-            name="b_c39fa08c53c3453ac24ae8a66_687f088c6f"
-            tabindex="-1"
-            value="">
-          </div>
+          <input
+            type="submit"
+            value="Notify me!"
+            name="subscribe"
+            id="mc-embedded-subscribe"
+            class="btn">
         </div>
-      </form>
-    </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <div
+          style="position: absolute; left: -5000px;"
+          aria-hidden="true">
+          <input
+          type="text"
+          name="b_c39fa08c53c3453ac24ae8a66_687f088c6f"
+          tabindex="-1"
+          value="">
+        </div>
+      </div>
+    </form>
   </div>
 </template>
 
