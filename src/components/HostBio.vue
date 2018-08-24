@@ -9,7 +9,7 @@
         >
       </div>
       <h3>Robin Hamill is an independent developer that works with merchants to create
-        unique buying experiencesby adding Vue.js (amongst other tools) to Shopify themes.</h3>
+        unique buying experiences by adding Vue.js (amongst other tools) to Shopify themes.</h3>
     </div>
     <social-icons />
   </section>
