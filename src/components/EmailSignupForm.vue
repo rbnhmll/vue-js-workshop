@@ -1,41 +1,53 @@
 <template>
-  <div id="mc_embed_signup" class="mc_embed_signup">
-    <form
-      action="https://robinhamill.us19.list-manage.com/subscribe/post?u=c39fa08c53c3453ac24ae8a66&amp;id=687f088c6f"
-      method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
-      class="validate"
-      target="_blank"
-      novalidate
-    >
-      <div id="mc_embed_signup_scroll">
-        <h3>Sign up now to be the first to know when the workshop is announced!</h3>
-        <div class="mc-field-group input-group">
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-          <label for="mce-EMAIL">Email Address </label>
+  <div class="wrapper--mini">
+
+    <div id="mc_embed_signup" class="mc_embed_signup">
+      <form
+        action="https://robinhamill.us19.list-manage.com/subscribe/post?u=c39fa08c53c3453ac24ae8a66&amp;id=687f088c6f"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate"
+        target="_blank"
+        novalidate
+      >
+        <div id="mc_embed_signup_scroll">
+          <h2>Sign up to be the first to know when the workshop is announced!</h2>
+          <div class="grid">
+            <div class="mc-field-group input-group">
+              <input
+                type="email"
+                value=""
+                name="EMAIL"
+                class="required email"
+                id="mce-EMAIL"
+                required
+              >
+              <label for="mce-EMAIL">Email Address </label>
+            </div>
+            <input
+              type="submit"
+              value="Notify me!"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+              class="button">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <div
+            style="position: absolute; left: -5000px;"
+            aria-hidden="true">
+            <input
+            type="text"
+            name="b_c39fa08c53c3453ac24ae8a66_687f088c6f"
+            tabindex="-1"
+            value="">
+          </div>
         </div>
-        <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
-        </div>
-        <div
-          style="position: absolute; left: -5000px;"
-          aria-hidden="true"><input
-          type="text"
-          name="b_c39fa08c53c3453ac24ae8a66_687f088c6f"
-          tabindex="-1"
-          value=""></div>
-        <div class="clear">
-          <input
-            type="submit"
-            value="Subscribe"
-            name="subscribe"
-            id="mc-embedded-subscribe"
-            class="button">
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -46,22 +58,31 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+@import '../styles/_vars'
+
+.grid
+  display grid
+  grid-template-columns 1fr min-content
+  grid-gap 10px
+
+  @media screen and (max-width: 540px)
+    grid-template-columns 1fr
+
 .mc_embed_signup
   display flex
   justify-content center
+  text-align center
 
-form
-  max-width 600px
-  width 100%
+h2
+  font-size 1em
 
 .input-group
   position relative
 
   label
-    font-size 2rem
-    color #ccc
+    color $dark-grey
     position absolute
-    left 2rem
+    left 1.8rem
     top 50%
     transform translateY(-50%)
     background rgba(255, 255, 225, 0)
@@ -70,13 +91,12 @@ form
     transition all 0.3s
 
   input
-    font-size 2rem
     display block
     width 100%
-    padding 20px
+    padding 15px
     border none
     border-radius 3px
-    border 2px solid #ccc
+    border 2px solid $dark-grey
 
     &:hover, &:focus, &:valid
       & + label
@@ -85,9 +105,13 @@ form
         font-size 1.6rem
 
 .button
-  border 2px solid #ccc
-  margin-top 30px
-  font-size 2rem
-  border-radius 10px
+  border 2px solid $dark-grey
+  font-weight bold
+  text-transform uppercase
+  border-radius 3px
   padding 10px 40px
+  transition(box-shadow)
+
+  &:hover, &:focus, &:active
+    box-shadow()
 </style>

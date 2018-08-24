@@ -2,7 +2,26 @@ html
   font-size 62.5%
 body
   font-size 1.6rem
+  background $gradient;
 .wrapper
   max-width 800px
   width 95%
   margin 0 auto
+  display grid
+  grid-gap 20px
+  &--mini
+    max-width 550px
+    margin 0 auto
+.app
+  font-family 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  color $dark-grey
+  margin-top 60px
+a
+  color lighten($dark-grey, 10)
+  text-decoration none
+  &:hover,
+  &:focus,
+  &:active
+    text-decoration underline
