@@ -30,7 +30,7 @@
               value="Notify me!"
               name="subscribe"
               id="mc-embedded-subscribe"
-              class="button">
+              class="btn">
           </div>
           <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display:none"></div>
@@ -103,15 +103,4 @@ h2
         top 0
         background rgba(255, 255, 255, 1)
         font-size 1.6rem
-
-.button
-  border 2px solid $dark-grey
-  font-weight bold
-  text-transform uppercase
-  border-radius 3px
-  padding 10px 40px
-  transition(box-shadow)
-
-  &:hover, &:focus, &:active
-    box-shadow()
 </style>
