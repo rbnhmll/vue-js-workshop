@@ -8,14 +8,6 @@
       </li>
     </ul>
 
-    <h2>Plus</h2>
-
-    <ul>
-      <li v-for="(topic, i) in plus" :key="i">
-        {{ topic }}
-      </li>
-    </ul>
-
     <h2>Experience</h2>
 
     <p>Participants should be comfortable with
@@ -55,8 +47,6 @@ export default {
         'Single File Components',
         'computed properties',
         'Filters',
-      ],
-      plus: [
         'Gotchas',
         'Tips',
         'Tricks',
