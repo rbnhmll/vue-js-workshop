@@ -48,8 +48,8 @@ export default {
         'computed properties',
         'Filters',
         'Gotchas',
-        'Tips',
-        'Tricks',
+        'Tips & Tricks',
+        'More...',
       ],
     };
   },
