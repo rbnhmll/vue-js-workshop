@@ -18,10 +18,14 @@
 
     <h2>Experience</h2>
 
-    <p>Participants should be comfortable with HTML and CSS,
-      and have a fundamental understanding of JavaScript, the terminal, and npm.
-      Experience with other reactive libraries like React or Angular is a bonus,
-      but not required.</p>
+    <p>Participants should be comfortable with
+      <strong>HTML</strong> and <strong>CSS</strong>,
+      and have a fundamental understanding of <strong>JavaScript</strong>,
+      the <strong>terminal</strong>,
+      and <strong>npm</strong>.</p>
+
+    <p>Experience with other reactive libraries like
+      <strong>React</strong> or <strong>Angular</strong> is a bonus, but not required.</p>
   </section>
 </template>
 
