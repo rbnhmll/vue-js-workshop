@@ -51,7 +51,7 @@ export default {
         'Event modifiers',
         'Component Registration',
         'Props',
-        'Vue CLI 3',
+        'Vue CLI 3 (NEW!)',
         'Single File Components',
         'computed properties',
         'Filters',
