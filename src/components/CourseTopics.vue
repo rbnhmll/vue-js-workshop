@@ -27,6 +27,13 @@
       <li>Tips</li>
       <li>Tricks</li>
     </ul>
+
+    <h2>Experience</h2>
+
+    <p>As a prerequisite, participants should be experienced with HTML and CSS,
+      and have a fundamental understanding of JavaScript, the terminal and npm.
+      Experience with other reactive libraries like React or Angular is a bonus,
+      but not required.</p>
   </section>
 </template>
 
@@ -50,8 +57,6 @@ h2
 ul
   display grid
   grid-template-columns repeat(auto-fit, minmax(200px, 1fr))
-  // grid-auto-rows 65px
-  // list-style-type none
   padding 0
   margin 0
   grid-gap 15px 50px
