@@ -3,35 +3,23 @@
     <h2>What will I learn?</h2>
 
     <ul>
-      <li>What is Vue, and why?</li>
-      <li>Vue CDN</li>
-      <li>Vue Devtools</li>
-      <li>The Vue Instance</li>
-      <li>Declarative Rendering</li>
-      <li>Directives</li>
-      <li>Methods</li>
-      <li>Event handing</li>
-      <li>Event modifiers</li>
-      <li>Component Registration</li>
-      <li>Props</li>
-      <li>Vue CLI 3</li>
-      <li>Single File Components</li>
-      <li>computed properties</li>
-      <li>Filters</li>
+      <li v-for="(topic, i) in topics" :key="i">
+        {{ topic }}
+      </li>
     </ul>
 
     <h2>Plus</h2>
 
     <ul>
-      <li>Gotchas</li>
-      <li>Tips</li>
-      <li>Tricks</li>
+      <li v-for="(topic, i) in plus" :key="i">
+        {{ topic }}
+      </li>
     </ul>
 
     <h2>Experience</h2>
 
-    <p>As a prerequisite, participants should be experienced with HTML and CSS,
-      and have a fundamental understanding of JavaScript, the terminal and npm.
+    <p>Participants should be comfortable with HTML and CSS,
+      and have a fundamental understanding of JavaScript, the terminal, and npm.
       Experience with other reactive libraries like React or Angular is a bonus,
       but not required.</p>
   </section>
@@ -44,6 +32,32 @@ export default {
   name: 'CourseTopics',
   components: {
     IconVue,
+  },
+  data() {
+    return {
+      topics: [
+        'What is Vue, and why?',
+        'Vue CDN',
+        'Vue Devtools',
+        'The Vue Instance',
+        'Declarative Rendering',
+        'Directives',
+        'Methods',
+        'Event handing',
+        'Event modifiers',
+        'Component Registration',
+        'Props',
+        'Vue CLI 3',
+        'Single File Components',
+        'computed properties',
+        'Filters',
+      ],
+      plus: [
+        'Gotchas',
+        'Tips',
+        'Tricks',
+      ],
+    };
   },
 };
 </script>
