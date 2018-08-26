@@ -20,6 +20,7 @@
               class="required email"
               id="mce-EMAIL"
               required
+              @input="validateEmail($event)"
             >
             <label for="mce-EMAIL">Email Address </label>
           </div>
@@ -28,7 +29,9 @@
             value="Notify me!"
             name="subscribe"
             id="mc-embedded-subscribe"
-            class="btn">
+            class="btn"
+            :disabled="!validEmail"
+          >
         </div>
         <div id="mce-responses" class="clear">
           <div class="response" id="mce-error-response" style="display:none"></div>
@@ -51,6 +54,20 @@
 <script>
 export default {
   name: 'EmailSignupForm',
+  data() {
+    return {
+      validEmail: false,
+    };
+  },
+  methods: {
+    validateEmail(e) {
+      const email = e.target.value;
+      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      const result = re.test(email);
+      this.validEmail = result;
+      console.log(this.validEmail, result);
+    },
+  },
 };
 </script>
 
