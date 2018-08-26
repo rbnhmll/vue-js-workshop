@@ -28,6 +28,6 @@ img
   max-width 150px
   width 100%
 
-h1
-  font-size 2.5em
+  @media screen and (max-width: 480px)
+    max-width 100px
 </style>
