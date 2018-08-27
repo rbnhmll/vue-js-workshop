@@ -1,12 +1,17 @@
 <template>
   <footer>
-    <p>&copy; <a href="https://www.robinhamill.com">Robin Hamill</a> 2018</p>
+    <p><span>Made with <icon-vue /></span> by <a href="https://www.robinhamill.com">Robin Hamill</a> &bull; 2018</p>
   </footer>
 </template>
 
 <script>
+import IconVue from './icons/IconVue.vue';
+
 export default {
   name: 'VFooter',
+  components: {
+    IconVue,
+  },
 };
 </script>
 
@@ -18,4 +23,12 @@ footer
 
   a
     color inherit
+
+  svg
+    width 1em
+    margin-left 3px
+
+  span
+    display inline-flex
+    align-items center
 </style>
