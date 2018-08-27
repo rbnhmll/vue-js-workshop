@@ -36,8 +36,11 @@ p, .headshot
   text-align center
 
 img
-  width 200px
+  max-width 200px
   border-radius 50%
+
+  @media screen and (max-width: 480px)
+    max-width 150px
 
 .description
   margin-bottom 25px
