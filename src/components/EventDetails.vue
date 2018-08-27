@@ -1,14 +1,16 @@
 <template>
   <section>
     <div class="content">
-      <h2>Event Details</h2>
+      <h2>Workshop Details</h2>
       <date-location />
       <div v-if="eventLive">
         <div :class="['pricing', {isEarlyBird: earlyBird }]">
           <span class="price" v-if="earlyBird">{{ pricing.earlyBird | money }}</span>
           <span v-if="earlyBird" class="early-bird label">Early Bird!</span>
 
-          <span :class="['regular', {strike: earlyBird, price: !earlyBird }]">{{ pricing.regular | money }}</span>
+          <span :class="['regular', {strike: earlyBird, price: !earlyBird }]">
+            {{ pricing.regular | money }}
+          </span>
           <span class="label" v-if="earlyBird">Regular</span>
         </div>
         <div>
@@ -16,7 +18,7 @@
         </div>
       </div>
       <div v-else>
-        <p>More info coming soon. Sign up to learn more.</p>
+        <p>The next workshop is coming soon. Sign up below to be notified.</p>
       </div>
     </div>
   </section>
