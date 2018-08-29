@@ -3,7 +3,7 @@
     <card>
       <div class="content">
         <h1>Thanks for signing up!</h1>
-        <p>I'll be in touch as soon as there is more info about this, and upcoming workshops!</p>
+        <p>You'll be the first to find out when this workshop is announced. Stay tuned!</p>
       </div>
       <social-icons />
       <nav>

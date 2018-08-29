@@ -1,7 +1,7 @@
 <template>
   <div class="home wrapper">
     <card>
-      <v-header />
+      <v-header :eventDetails="eventDetails" />
     </card>
     <card>
       <description />
@@ -13,10 +13,10 @@
       <host-bio />
     </card>
     <card>
-      <event-details />
+      <event-details :eventDetails="eventDetails" />
     </card>
-    <card>
-      <email-signup-form />
+    <card >
+      <email-signup-form :eventDetails="eventDetails" />
     </card>
     <v-footer />
   </div>
@@ -43,6 +43,18 @@ export default {
     EventDetails,
     HostBio,
     VFooter,
+  },
+  data() {
+    return {
+      eventDetails: {
+        eventLive: false,
+        earlyBird: true,
+        pricing: {
+          earlyBird: 75,
+          regular: 100,
+        },
+      },
+    };
   },
 };
 </script>

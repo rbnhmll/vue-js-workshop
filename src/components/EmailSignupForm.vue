@@ -10,7 +10,7 @@
       novalidate
     >
       <div id="mc_embed_signup_scroll">
-        <h2>Sign up to be the first to know when the workshop is announced!</h2>
+        <h2>Sign up to be the first to know when the next workshop is announced!</h2>
         <div class="grid">
           <div class="mc-field-group input-group">
             <input
