@@ -47,7 +47,7 @@ export default {
   data() {
     return {
       eventDetails: {
-        eventLive: false,
+        eventLive: true,
         earlyBird: true,
         pricing: {
           earlyBird: 75,
