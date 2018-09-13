@@ -1,7 +1,7 @@
 <template functional>
   <div>
-    <h3>Toronto &bull; Saturday October 13, 2018</h3>
-    <p>10am</p>
+    <h3><a href="https://goo.gl/maps/VLpzJeLNzWM2" target="_blank">Free Space</a> &bull; Saturday October 13, 2018</h3>
+    <p>10am - 2pm</p>
   </div>
 </template>
 
@@ -12,7 +12,11 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-h1, h2
-  & + h3, h4
-    // margin-top 0
+h3
+  margin-bottom 0
+
+p
+  font-size 1.4rem
+  margin-top 5px
+  margin-bottom 30px
 </style>
