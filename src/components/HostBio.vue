@@ -1,10 +1,10 @@
 <template>
   <section>
-    <h2>About the Instructor</h2>
+    <h2>Meet the Instructor</h2>
     <div class="description">
       <div class="headshot">
         <img
-          src="../assets/robinHeadshotSquare.jpg"
+          src="@/assets/robinHeadshotSquare.jpg"
           alt="Robin Hamill headshot"
         >
       </div>
