@@ -8,7 +8,7 @@
           alt="Robin Hamill headshot"
         >
       </div>
-      <h3>Robin Hamill is an independent developer that works with merchants to create
+      <h3 class="h4">Robin Hamill is a lead instructor at <a href="https://hackeryou.com/" target="_blank">HackerYou</a> in Toronto, and an independent developer that works with merchants to create
         unique buying experiences by adding Vue.js (amongst other tools) to Shopify themes.</h3>
     </div>
     <social-icons />
@@ -36,17 +36,18 @@ p, .headshot
   text-align center
 
 img
-  max-width 200px
+  width 100%
+  max-width 150px
   border-radius 50%
-
-  @media screen and (max-width: 480px)
-    max-width 150px
 
 .description
   margin-bottom 25px
   display grid
-  grid-template-columns repeat(auto-fit, minmax(250px, 1fr))
+  grid-template-columns 150px 1fr
   align-items center
   justify-content flex-start
-  grid-gap 20px
+  grid-gap 0 50px
+
+  @media screen and (max-width: 680px)
+    grid-template-columns 1fr
 </style>

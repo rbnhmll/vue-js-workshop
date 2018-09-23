@@ -10,8 +10,8 @@
       novalidate
     >
       <div id="mc_embed_signup_scroll">
-        <h2 v-if="eventDetails.eventLive">Can't make this one?</h2>
-        <h2>Sign up to be the first to know when the next workshop is announced!</h2>
+        <h2 class="h4" v-if="eventDetails.eventLive">Can't make this one?</h2>
+        <h2 class="h5">Sign up to be the first to know when the next workshop is announced!</h2>
         <div class="grid">
           <div class="mc-field-group input-group">
             <input
@@ -91,7 +91,7 @@ export default {
   text-align center
 
 h2
-  font-size 1em
+  // font-size 1em
 
 .input-group
   position relative

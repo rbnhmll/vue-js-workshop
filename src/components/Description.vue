@@ -4,7 +4,7 @@
       to get started using
       <a href="https://vuejs.org/" target="_blank">Vue.js</a>.</h2>
 
-    <h3>Together you will build a fully functional web application using the Vue CDN,
+    <h3 class="h4">Together you will build a fully functional web application using the Vue CDN,
       as well as the new Vue CLI 3!</h3>
 
     <p>As websites have become more complex and interactive,

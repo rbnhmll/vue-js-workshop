@@ -19,4 +19,5 @@ export default {
 a
   display inline-block
   margin-top 30px
+  font-size 20px
 </style>
