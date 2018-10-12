@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <h1>Vue JS Workshop</h1>
     <date-location />
+    <SoldOut v-if="eventDetails.event.isSoldOut" />
     <component :is="ctaComp" :eventDetails="eventDetails" />
   </header>
 </template>
@@ -11,6 +12,7 @@
 import DateLocation from './DateLocation.vue';
 import Signup from './Signup.vue';
 import EmailSignupForm from './EmailSignupForm.vue';
+import SoldOut from './SoldOut.vue';
 
 export default {
   name: 'VHeader',
@@ -18,13 +20,14 @@ export default {
     DateLocation,
     Signup,
     EmailSignupForm,
+    SoldOut,
   },
   props: {
     eventDetails: Object,
   },
   computed: {
     ctaComp() {
-      return this.eventDetails.eventLive ? Signup : EmailSignupForm;
+      return this.eventDetails.event.isLive ? Signup : EmailSignupForm;
     },
   },
 };

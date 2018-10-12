@@ -47,8 +47,13 @@ export default {
   data() {
     return {
       eventDetails: {
-        eventLive: true,
-        earlyBird: true,
+        // eventLive: false,
+        // earlyBird: false,
+        event: {
+          isLive: false,
+          hasEarlyBird: false,
+          isSoldOut: true,
+        },
         pricing: {
           earlyBird: 75,
           regular: 100,

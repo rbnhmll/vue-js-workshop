@@ -3,13 +3,16 @@
     <div :class="['pricing', {isEarlyBird: eventDetails.earlyBird }]">
       <span
         class="price"
-        v-if="eventDetails.earlyBird"
+        v-if="eventDetails.event.hasEarlyBird"
       >
         {{ eventDetails.pricing.earlyBird | money }}
       </span>
-      <span v-if="eventDetails.earlyBird" class="early-bird label">Early Bird!</span>
+      <span v-if="eventDetails.event.hasEarlyBird" class="early-bird label">Early Bird!</span>
 
-      <span :class="['regular', {strike: eventDetails.earlyBird, price: !eventDetails.earlyBird }]">
+      <span :class="['regular', {
+          strike: eventDetails.event.hasEarlyBird,
+          price: !eventDetails.event.hasEarlyBird
+        }]">
         {{ eventDetails.pricing.regular | money }}
       </span>
       <span class="label">Regular ticket</span>
