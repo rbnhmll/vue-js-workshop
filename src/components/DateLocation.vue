@@ -1,7 +1,10 @@
 <template>
   <div>
     <template v-if="!location.TBD">
-      <h2 class="h4 heading">At <a :href="location.venue.mapLink" target="_blank">{{ location.venue.name }}</a> &bull; {{ location.date }}</h2>
+      <h2 class="h4 heading">
+        At <a :href="location.venue.mapLink" target="_blank">{{ location.venue.name }}</a>
+        &bull; {{ location.date }}
+      </h2>
       <p>{{ location.time }}</p>
     </template>
     <template v-else>
