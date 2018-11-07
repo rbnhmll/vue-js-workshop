@@ -2,12 +2,12 @@
   <section>
     <div class="content">
       <h2>Workshop Details</h2>
-      <date-location />
+      <DateLocation :eventDetails="eventDetails" />
       <SoldOut v-if="eventDetails.event.isSoldOut" />
-      <signup v-if="eventDetails.event.isLive" :eventDetails="eventDetails" />
-      <div v-else>
+      <Signup v-if="eventDetails.event.isLive" :eventDetails="eventDetails" />
+      <template v-else>
         <p>The next workshop is coming soon. Sign up below to be notified.</p>
-      </div>
+      </template>
     </div>
   </section>
 </template>
@@ -26,9 +26,6 @@ export default {
     DateLocation,
     Signup,
     SoldOut,
-  },
-  data() {
-    return {};
   },
 };
 </script>

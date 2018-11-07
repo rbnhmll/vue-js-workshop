@@ -1,13 +1,26 @@
-<template functional>
+<template>
   <div>
-    <h2 class="h4 heading">At <a href="https://goo.gl/maps/VLpzJeLNzWM2" target="_blank">Free Space</a> &bull; Saturday October 13, 2018</h2>
-    <p>10am - 2pm</p>
+    <template v-if="!location.TBD">
+      <h2 class="h4 heading">At <a :href="location.venue.mapLink" target="_blank">{{ location.venue.name }}</a> &bull; {{ location.date }}</h2>
+      <p>{{ location.time }}</p>
+    </template>
+    <template v-else>
+      <h2 class="h4 heading">Toronto &bull; January 2019</h2>
+    </template>
   </div>
 </template>
 
 <script>
 export default {
   name: 'DateLocation',
+  props: {
+    eventDetails: Object,
+  },
+  computed: {
+    location() {
+      return this.eventDetails.event.location;
+    },
+  },
 };
 </script>
 

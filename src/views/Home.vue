@@ -47,16 +47,24 @@ export default {
   data() {
     return {
       eventDetails: {
-        // eventLive: false,
-        // earlyBird: false,
         event: {
+          location: {
+            TBD: true,
+            date: 'Saturday October 13, 2018',
+            time: '10am - 2pm',
+            venue: {
+              name: 'Free Space',
+              mapLink: 'https://goo.gl/maps/TFi39cqF2zG2',
+            },
+
+          },
           isLive: false,
-          hasEarlyBird: false,
-          isSoldOut: true,
+          hasEarlyBird: true,
+          isSoldOut: false,
         },
         pricing: {
-          earlyBird: 75,
-          regular: 100,
+          earlyBird: 200,
+          regular: 250,
         },
       },
     };
