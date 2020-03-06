@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p><span>Made with <icon-vue /></span> by <a href="https://www.robinhamill.com">Robin Hamill</a> &bull; 2018</p>
+    <p><span>Made with <icon-vue /></span> by <a href="https://www.robinhamill.com">Robin Hamill</a> &bull; {{year}}</p>
   </footer>
 </template>
 
@@ -11,6 +11,11 @@ export default {
   name: 'VFooter',
   components: {
     IconVue,
+  },
+  computed: {
+    year() {
+      return new Date().getFullYear();
+    },
   },
 };
 </script>
