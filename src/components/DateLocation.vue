@@ -3,7 +3,7 @@
     <template v-if="!location.TBD">
       <h2 class="h4 heading">
         At
-        <a :href="location.venue.mapLink" target="_blank">{{ location.venue.name }}</a>
+        <a :href="location.venue.mapLink" target="_blank"rel="noopener noreferrer">{{ location.venue.name }}</a>
         &bull; {{ location.date }}
       </h2>
       <p>{{ location.time }}</p>
@@ -16,15 +16,15 @@
 
 <script>
 export default {
-  name: "DateLocation",
+  name: 'DateLocation',
   props: {
-    eventDetails: Object
+    eventDetails: Object,
   },
   computed: {
     location() {
       return this.eventDetails.event.location;
-    }
-  }
+    },
+  },
 };
 </script>
 
