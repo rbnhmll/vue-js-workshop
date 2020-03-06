@@ -1,17 +1,17 @@
 <template>
   <ul>
     <li>
-      <a href="https://twitter.com/rbnhmll" aria-label="Twitter" title="Twitter" target="_blank">
+      <a href="https://twitter.com/rbnhmll" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener noreferrer">
         <icon-twitter />
       </a>
     </li>
     <li>
-      <a href="https://github.com/rbnhmll" aria-label="Github" title="Github" target="_blank">
+      <a href="https://github.com/rbnhmll" aria-label="Github" title="Github" target="_blank" rel="noopener noreferrer">
         <icon-github />
       </a>
     </li>
     <li>
-      <a href="https://robinhamill.com" aria-label="Website" title="Website" target="_blank">
+      <a href="https://robinhamill.com" aria-label="Website" title="Website" target="_blank" rel="noopener noreferrer">
         <icon-website />
       </a>
     </li>

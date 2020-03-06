@@ -8,7 +8,7 @@
           alt="Robin Hamill headshot"
         >
       </div>
-      <h3 class="h4">Robin Hamill is a lead instructor at <a href="https://hackeryou.com/" target="_blank">HackerYou</a> in Toronto, and an independent developer that works with merchants to create
+      <h3 class="h4">Robin Hamill is a lead instructor at <a href="https://junocollege.com/" target="_blank" rel="noopener noreferrer">Juno College</a> in Toronto, and an independent E-commerce consultant that works with merchants to create
         unique buying experiences by adding Vue.js (amongst other tools) to Shopify themes.</h3>
     </div>
     <social-icons />
